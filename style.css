@@ -1,0 +1,253 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, #5f3de3, #ae93f9);
+    color: #222;
+}
+.html {
+    scroll-behavior: smooth;
+}
+/* Фиксированные стили */
+.top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(140, 99, 235, 0.897);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+    z-index: 1000;
+}
+
+/*логотип слева*/
+.logo {
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*меню справа*/
+.menu {
+    margin-right: 250px;
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+/* Верхняя шапка*/
+
+.hero {
+
+    text-align: center;
+    color: white;
+    padding: 80px 10px 30px;
+}
+
+.hero h1 {
+    font-size: 30px;
+    max-width: 700px;
+    margin: auto
+}
+
+.hero p {
+    font-size: 17px;
+    opacity: 0.9;
+    max-width: 550px;
+    margin: 0 auto 40px;
+    margin-top: 25px;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #ff6f6f;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(233, 223, 223, 0.4);
+}
+/*Блок что такое нейронные сети*/
+.features {
+    text-align: center;
+    padding: 25px 0px;
+    background: white;
+    max-width: 99%;
+    border-radius: 10px;
+    margin: 40px auto;
+    height: 400px;
+}
+
+.features h2 {
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background: #f8f3f8;
+    border-radius: 20px;
+    border-left: 3px solid #6842ff;
+    padding: 30px 25px;
+    width: 280px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card .icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 20 px;
+}
+
+/*Блок про применение нейросетей*/
+.section.purple {
+    padding: 5px 0;
+    text-align: center;
+    color: white;
+}
+
+.section.purple h2 {
+    font-size: 25px;
+    margin-bottom: 55px;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.app {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 35px 30px;
+    width: 280px;
+    border-radius: 20px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+}
+
+.app span {
+    color: #eed12d;
+    margin-bottom: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.app p {
+    font-size: 15px;
+}
+
+/*Блок про работу нейросетей*/
+
+.steps {
+    padding: 30px 0;
+    text-align: center;
+    background: white;
+    max-width: 99%;
+    border-radius: 10px;
+    margin: 40px auto;
+}
+
+.steps h2 {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+.step-card {
+    background: #f8f3f8;
+    width: 700px;
+    margin: 20px auto;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 25px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+/*Номер в кружкей*/
+.step-number {
+    background: #6842ff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50%;
+    line-height: 1;
+}
+
+.step-content h3 {
+    font-size: 20px;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.step-content p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.footer {
+    color: white;
+    padding: 10px 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.footer p {
+    max-width: 900px;
+    opacity: 0.9;
+}
